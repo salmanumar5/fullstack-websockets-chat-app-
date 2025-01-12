@@ -12,7 +12,6 @@ const authRoutes = require('./routes/auth.route');
 const messageRoutes = require('./routes/message.route');
 
 const PORT = process.env.PORT || 5002;
-const __dirname = path.resolve();
 
 app.use(express.json({ limit: "10mb" })); // Adjust the size as needed
 app.use(express.urlencoded({ limit: "10mb", extended: true }));
